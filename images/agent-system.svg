@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="Agent system">
+  <rect width="320" height="180" rx="22" fill="#fff"/>
+  <rect x="36" y="44" width="78" height="46" rx="12" fill="#fef5f1" stroke="#f5bba7" stroke-width="3"/>
+  <rect x="206" y="44" width="78" height="46" rx="12" fill="#fef5f1" stroke="#f5bba7" stroke-width="3"/>
+  <rect x="121" y="104" width="78" height="46" rx="12" fill="#fef5f1" stroke="#f5bba7" stroke-width="3"/>
+  <path d="M114 68 H206 M87 90 L131 111 M233 90 L189 111" fill="none" stroke="#ca6f6f" stroke-width="4" stroke-linecap="round"/>
+  <text x="75" y="74" text-anchor="middle" font-family="Arial" font-size="15" fill="#202124" font-weight="700">Plan</text>
+  <text x="245" y="74" text-anchor="middle" font-family="Arial" font-size="15" fill="#202124" font-weight="700">Verify</text>
+  <text x="160" y="134" text-anchor="middle" font-family="Arial" font-size="15" fill="#202124" font-weight="700">Learn</text>
+</svg>

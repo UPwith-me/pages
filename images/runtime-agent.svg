@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="Runtime agent">
+  <rect width="320" height="180" rx="22" fill="#fff"/>
+  <rect x="42" y="45" width="236" height="94" rx="14" fill="#f7f7f7" stroke="#ddd" stroke-width="3"/>
+  <text x="64" y="78" font-family="monospace" font-size="16" fill="#202124">$ observe()</text>
+  <text x="64" y="104" font-family="monospace" font-size="16" fill="#ca6f6f">$ patch --verify</text>
+  <text x="64" y="130" font-family="monospace" font-size="16" fill="#6b7280">✓ feedback loop</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="Research">
+  <rect width="320" height="180" rx="22" fill="#f7f7f7"/>
+  <path d="M70 122 L112 76 L151 105 L210 44 L254 92" fill="none" stroke="#ca6f6f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="76" r="9" fill="#83a1c7"/>
+  <circle cx="151" cy="105" r="9" fill="#83a1c7"/>
+  <circle cx="210" cy="44" r="9" fill="#83a1c7"/>
+  <text x="50" y="152" font-family="Arial, sans-serif" font-size="20" fill="#202124" font-weight="700">Research Preparation</text>
+</svg>

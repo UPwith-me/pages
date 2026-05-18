@@ -1,0 +1,13 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+# Do not ignore _sass/vendor; Jekyll needs these SCSS partials on GitHub Pages.
+# vendor/
+node_modules/
+.DS_Store
+
+# Required for AcademicPages / Minimal Mistakes SCSS imports
+!_sass/vendor/
+!_sass/vendor/**

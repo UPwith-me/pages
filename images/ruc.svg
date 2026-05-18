@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-label="RUC">
+  <rect width="320" height="180" rx="22" fill="#fef5f1"/>
+  <circle cx="88" cy="90" r="46" fill="#ca6f6f" opacity="0.92"/>
+  <text x="88" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" fill="white" font-weight="700">RUC</text>
+  <text x="155" y="84" font-family="Arial, sans-serif" font-size="22" fill="#202124" font-weight="700">Renmin University</text>
+  <text x="155" y="112" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">Undergraduate · AI</text>
+</svg>

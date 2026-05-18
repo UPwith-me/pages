@@ -1,0 +1,165 @@
+# Homepage content for the WowPage-based personal site.
+# Maintenance rule: add / edit content here first; the homepage reads this file with Liquid loops.
+
+hero:
+  eyebrow: "Undergraduate · LLM Agents · Multimodal · AI Research"
+  heading: "何基培 / He Jipei"
+  greeting: "Hi there"
+  intro: >-
+    中国人民大学 2024 级本科生。我的兴趣集中在Multimodal LLM(reasoning)、LLM Agents与LLM Safety，
+    目前正在中国人民大学高瓴人工智能学院与信息学院实习，希望能够进一步夯实自己的能力，做出属于自己的成果。
+  actions:
+    - label: "查看项目"
+      url: "#projects"
+      type: "primary"
+    - label: "GitHub Profile"
+      url: "https://github.com/UPwith-me"
+      external: true
+    - label: "Email"
+      url: "mailto:hejipei0228@ruc.edu.cn"
+
+news:
+  - date: "2026.05"
+    text: "开始于中国人民大学高瓴人工智能学院AI Mind LAB实习，接受[宋睿华老师](https://dblp.uni-trier.de/pid/s/RuihuaSong.html)的指导，研究方向集中在Multimodal LLM Reasoning（视频相关高效推理方向）"
+  - date: "2026.04"
+    text: "开始于中国人民大学信息学院AIM3 LAB实习，接受[王文轩老师](https://jarviswang94.github.io)的指导，研究方向集中在多模态体育理解与多模态agent方向。"
+  - date: "2026.03"
+    text: "开始于中国人民大学信息学院[赵素云老师](http://dblp.uni-trier.de/pers/hd/z/Zhao:Suyun)处负责跨模态攻击性指令过滤器项目，主要负责过滤算法的研究与设计"
+  - date: "2024.09"
+    text: "进入中国人民大学本科学习，并开始系统补足数学、CS 与人工智能研究基础。"
+
+focus_cards:
+  - title: "Current Focus"
+    text: "Multimodal Reasoning · LLM Agents· LLM Safety"
+  - title: "Now Working On"
+    text: "多模态体育理解Benchmark构建与agent设计、视频相关latent reasoning、跨模态攻击性指令过滤算法"
+  - title: "Goal"
+    text: "人工智能方向直博，继续从事多模态相关研究"
+
+experience:
+  - institution: "Renmin University of China"
+    period: "2024.09 - Present"
+    role: "Undergraduate Student"
+    logo: "/images/ruc.svg"
+    logo_alt: "RUC"
+    description: "围绕人工智能、机器学习、深度学习与多模态大模型方向进行系统学习和研究准备。"
+  - institution: "AI Research Preparation"
+    period: "Current"
+    role: "Multimodal · LLM Agents · LLM Safety"
+    logo: "/images/research.svg"
+    logo_alt: "Research"
+    description: "以课程补基础，以论文建视野，以项目做检验，逐步训练问题意识、实验能力和系统实现能力。"
+
+learning:
+  title: "学习经历"
+  subtitle: "我的学习路径主要沿着数学基础、CS 专业课与课外拓展三条线并行推进，持续为进入人工智能研究打基础。"
+  groups:
+    - title: "数学"
+      items:
+        - "MIT 18.01"
+        - "MIT 18.02"
+        - "MIT 18.06"
+        - "概率论、统计学、信息论、数值计算方法"
+    - title: "CS 专业课"
+      items:
+        - "人工智能与 Python 程序设计"
+        - "机器学习"
+        - "深度学习"
+    - title: "课外拓展学习"
+      items:
+        - "最优化算法、正则化"
+        - "Transformer、RLHF、Scaling Laws"
+        - "LLaMA 等相关论文"
+        - "CS336"
+
+projects_intro:
+  title: "项目不是堆功能，而是逐步形成问题意识。"
+  subtitle: "下面列出我目前最重要的项目。对我而言，项目的价值不只在于做出来，更在于它如何成为一个值得被研究的问题。"
+
+projects:
+  - title: "GrandMaster"
+    subtitle: "Primary Project"
+    image: "/images/agent-system.svg"
+    image_alt: "Agent system"
+    featured: true
+    description: >-
+      一个 long-horizon、governance-aware 的 multi-agent LLM research system。这原本是为 WorldQuant Brain 设计的量化自动化平台，
+      但现在可以视为一个复杂环境中 agent evaluation、failure learning、evidence integrity 与 governed autonomy 的研究原型。
+    tags:
+      - "LLM Agents"
+      - "Long-Horizon Evaluation"
+      - "Failure Analysis"
+      - "Governed Autonomy"
+    bullets:
+      - "关注多 Agent 系统在高成本、反馈稀疏环境中的长期行为。"
+      - "强调 authority / intelligence separation 与 typed failure learning。"
+      - "用 replay-based evaluation 判断系统是否真的在改进。"
+    links:
+      - label: "项目说明页"
+        url: "/grandmaster/"
+      - label: "Web Demo"
+        url: "http://39.107.250.250/grand_master"
+        external: true
+  - title: "Augur"
+    subtitle: "Runtime-Aware Agent"
+    image: "/images/runtime-agent.svg"
+    image_alt: "Runtime agent"
+    description: >-
+      一个 runtime-aware debugging agent 原型，将调试过程建模为 observation、tool use、verifier、reflection 组成的闭环，
+      用于观察 agent 在真实可执行环境中的行为与失败模式。
+    tags:
+      - "Runtime-Aware"
+      - "Verifier Loop"
+      - "Trajectory Logging"
+      - "Debugging"
+    bullets:
+      - "将调试从单轮 patch 生成推进到多步行为过程。"
+      - "统一 runtime observation、tool result 与 verifier feedback。"
+      - "更关注失败模式与行为分析，而不只是一次修对。"
+    links:
+      - label: "GitHub Repo"
+        url: "https://github.com/UPwith-me/Augur-Runtime-Debugging-Agent"
+        external: true
+  - title: "跨模态攻击性指令过滤器"
+    subtitle: "Ongoing Course Project"
+    image: "/images/multimodal-safety.svg"
+    image_alt: "Multimodal safety"
+    description: "当前进行中的课程研究项目，聚焦多模态安全，主要涉及 benchmark 搭建、主流视觉语言模型评测，以及过滤算法设计。"
+    tags:
+      - "Multimodal"
+      - "VLM Evaluation"
+      - "Safety"
+      - "Benchmark"
+    bullets:
+      - "围绕多模态攻击性指令过滤问题展开。"
+      - "正在做 benchmark 搭建与主流 VLM 评测。"
+      - "进一步强化我对多模态研究的兴趣。"
+
+preparation:
+  title: "我如何把学习转成研究准备。"
+  subtitle: "相比重复列课程，这一部分更适合说明我如何通过课程、论文阅读与项目实践，把知识逐步转化为研究能力。"
+  cards:
+    - title: "Learning Method"
+      text: "以课程补基础，以论文建视野，以项目做检验。我的学习方式不是孤立刷课，而是把知识放进具体问题和系统实践里。"
+    - title: "Current Reading Focus"
+      text: "目前重点关注大语言模型、LLM Agents、Multimodal、Evaluation、Reliability 与 Failure Analysis 相关方向。"
+    - title: "Research Preparation"
+      text: "我正在通过 benchmark 搭建、模型评测、失败案例分析与项目实现，训练自己进入更正式科研所需要的问题意识与实验能力。"
+    - title: "Next Step"
+      text: "希望在研究生阶段继续进入大模型算法与多模态研究，从可复现实验、评测设计与系统实现进一步走向真正的研究工作。"
+
+contact:
+  title: "欢迎通过邮箱联系我。"
+  text: "如果你想交流项目、研究方向或进一步合作，欢迎直接发邮件给我。"
+  email: "hejipei0228@ruc.edu.cn"
+  links:
+    - label: "Email"
+      url: "mailto:hejipei0228@ruc.edu.cn"
+      type: "primary"
+    - label: "GitHub"
+      url: "https://github.com/UPwith-me"
+
+# Optional generic blocks. Add items here when you want a new homepage section
+# without editing HTML/Liquid. Supported fields: id, kicker, title, subtitle,
+# content, items, cards, links, columns.
+extra_sections: []

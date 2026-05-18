@@ -1,0 +1,171 @@
+# GrandMaster page content. Edit this file to maintain the project page.
+
+hero:
+  eyebrow: "Project Note · Agent Systems · Evaluation Integrity"
+  title: "GrandMaster"
+  intro: >-
+    GrandMaster 是一个 long-horizon、governance-aware 的 multi-agent LLM research system。
+    它最准确的定位不是自动化量化平台，而是一个 domain-grounded 的 agent systems project：
+    关注 long-horizon execution、governed autonomy、typed failure learning、evaluation integrity，以及 delayed feedback 下的持续改进。
+  actions:
+    - label: "Web Demo"
+      url: "http://39.107.250.250/grand_master"
+      type: "primary"
+      external: true
+    - label: "Back Home"
+      url: "/"
+
+overview:
+  kicker: "Overview"
+  title: "这不是一个更大的 prompt pipeline。"
+  subtitle: >-
+    GrandMaster 试图回答的不是如何让系统多生成一些东西，而是如何让一个长期运行的多智能体系统在复杂环境里真正变强，
+    而不是越来越会解释自己为什么看起来像是变强了。
+  cards:
+    - title: "Project Theme"
+      text: "在高成本、反馈稀疏、容易产生 false positive 的真实任务环境中，让 LLM agents 既能提供研究判断，又不越权进入控制、验证和写入真相的链路。"
+    - title: "Current Positioning"
+      text: "当前更应被呈现为一个强的 agent-systems and evaluation project，而不是一个已经得到 authoritative 高质量最终结果的 alpha production engine。"
+
+research_questions:
+  kicker: "Research Questions"
+  title: "项目围绕五个核心问题展开。"
+  subtitle: "这些问题决定了 GrandMaster 更像一个 agent research system，而不是一个单纯的任务自动化产品。"
+  items:
+    - title: "Evaluation"
+      text: "如何判断一个 long-horizon multi-agent LLM system 在 noisy environment 中是否真的改进，而不是只是变得更会生成、更会总结？"
+    - title: "Robustness"
+      text: "如何让一个长期自治系统在反复 partial failure 的情况下继续运行，同时维持 operationally alive 与 epistemically honest？"
+    - title: "Governance"
+      text: "如何让 LLM 提供高价值 research judgment，又不让它对 memory、validation、stopping decisions 拥有未经约束的 authority？"
+    - title: "Learning"
+      text: "如何把 repeated failed trajectories 转成 structured priors，而不把系统过早收缩成 deny-list driven search？"
+    - title: "Continuation"
+      text: "如何判断一个分支是 dead、repairable 还是值得继续消耗 graduation budget？"
+
+architecture:
+  kicker: "Architecture"
+  title: "六层结构，不把思考与写入真相混在一起。"
+  subtitle: "GrandMaster 的高层架构可以理解为六个相互配合的平面。它的关键设计是把 research intelligence 与 execution authority 硬性拆开。"
+  cards:
+    - title: "Governance Plane"
+      bullets:
+        - "负责预算、继续条件、硬规则与 capability gates。"
+        - "包含 consultant mode rules、submission precheck policy、continuation logic。"
+        - "保证 autonomy 是 bounded、permissioned、measured、restart-safe。"
+    - title: "Execution Plane"
+      bullets:
+        - "负责任务排队、episode 执行、heartbeat、checkpoint 与 closeout。"
+        - "代表组件包括 V2Orchestrator、persistent autonomous supervisor、task workers、ContextEngine。"
+        - "支持 recover / restart / quarantine / close-out。"
+    - title: "Research Intelligence Plane"
+      bullets:
+        - "负责 hypothesis generation、intent analysis、structured research packets、critique、reroute 与 outcome summarization。"
+        - "代表 agents 包括 PlannerAgent、ResearchDirectorAgent、DataCartographerAgent、MechanismScoutAgent、MechanismToExpressionAgent、HypothesisAgent、CriticAgent、SimAnalystAgent、OutcomeScientistAgent。"
+    - title: "Evidence / Learning / Evaluation"
+      bullets:
+        - "Evidence 通过 state.json、events.ndjson、quality_reports、submission_precheck_report、outcome_scientist_report、reflection_merge 等 artifact 保存真实发生过的事情。"
+        - "Learning 通过 failure_digest、research_memory_ledgers、ResearchBook、ReflectionMerger 把结果转成长期 priors。"
+        - "Evaluation 通过 replay diagnostics、hypothesis quality analysis、information backbone evaluation、benchmark reports、burn-in 和 canary 来判断系统是否真正改进。"
+
+lifecycle:
+  kicker: "Lifecycle"
+  title: "运行时不是一条无限循环，而是有边界的 episode。"
+  subtitle: "GrandMaster 不把研究视作一个单一的无限进程，而是明确组织成 bounded task episodes。这样 continuation 就变成可治理的决策，而不是 accidental infinite loop。"
+  items:
+    - title: "task created → intent_parse"
+      text: "创建任务，解析 intent、规则上下文与 task-space，形成后续 branch generation 的边界。"
+    - title: "branch_seed → mechanism_to_expression"
+      text: "生成研究分支，映射 mechanism family，并把机制表达成可进一步校验的结构化候选。"
+    - title: "static_lint → fast_sim → robust_sim"
+      text: "先过静态合法性，再进入更快的模拟与更严格的 robust quality 验证，把明显无效与潜在可修候选区分开。"
+    - title: "triage → overlay_research"
+      text: "对 near-miss、repairable failure 和 reroute opportunity 进行分类；对 promising branches 叠加更多上下文研究与补救策略。"
+    - title: "reflect → memory update"
+      text: "把失败和结果送入 failure capsules、reflection proposals 与 deterministic reflection merge，写入 ResearchBook 和长期 priors。"
+
+implementation:
+  kicker: "Technical Implementation"
+  title: "技术实现重点在结构化与可审计。"
+  subtitle: "GrandMaster 的技术实现不是单纯堆很多 agents，而是通过 typed contracts、layered memory、artifact-mediated collaboration 和 append-only evidence，让 agent 行为变得可重放、可分析、可治理。"
+  cards:
+    - title: "Typed Multi-Agent Runtime"
+      bullets:
+        - "所有 agents 继承自 BaseAgent。"
+        - "每个 agent 有独立 identity、bounded max_turns、独立 conversation history。"
+        - "每次调用接收 typed AgentContext，返回 typed AgentResult。"
+        - "目标不是共享一段超长对话，而是把 agent 当作可替换、可隔离的 modular workers。"
+    - title: "Layered Memory Design"
+      bullets:
+        - "Agent-local memory：支撑 bounded reasoning 与角色隔离。"
+        - "Task-local memory：由 ContextEngine 管理 task packet、branch packets、events、checkpoints、compactions。"
+        - "Branch-level memory：保存 branch payload、artifact handles、latest summary、budget usage、error count。"
+        - "Research memory：failure_digest、research_memory_ledgers、outcome_scientist_report。"
+        - "Global memory：ResearchBook，append-only facts + materialized views + policy separation。"
+    - title: "Artifact-Mediated Collaboration"
+      bullets:
+        - "协作主要通过 task artifacts、branch artifacts、typed summaries、stage outputs 完成。"
+        - "scouts 的结果被后续 stages 消费。"
+        - "critic 的结果变成 repair / reroute 输入。"
+        - "outcome summaries 进入 reflection 与 future search steering。"
+        - "优势在于 replayable、auditable，并允许不同 agent 分歧而不直接污染 canonical state。"
+    - title: "Evidence & Reflection Pipeline"
+      bullets:
+        - "系统保存 state.json、events.ndjson、branch_plans.json、quality_reports.json、submission_precheck_report.json、failure_digest.json、outcome_scientist_report.json、reflection_merge.json 等 artifacts。"
+        - "反思输出先是 typed proposals，而不是直接变成事实。"
+        - "最终由 ReflectionMerger 通过 deterministic merge 决定什么能写入长期 memory。"
+        - "核心目的是保护 evidence integrity，避免 LLM narrative 被误当成 authoritative outcome。"
+  note: "从工程实现视角看，GrandMaster 的关键词不是更多工具，而是：typed artifacts、append-only evidence、bounded episodes、structured reflection、deterministic memory merge、persistent supervisor、replay diagnostics。"
+
+evaluation:
+  kicker: "Evaluation"
+  title: "把是否真的变强做成一条单独的评测链。"
+  subtitle: "GrandMaster 的一个关键点是：它并不把日志和 summary 当成 progress 本身，而是专门搭建 replay / benchmark / error analysis 去区分生成更顺与系统真的更好。"
+  items:
+    - title: "Replay diagnostics"
+      text: "回放历史任务，比较不同阶段的 route、behavior 和 outcome，把 improvement 问题变成可分析对象。"
+    - title: "Hypothesis quality analysis"
+      text: "不只看 runtime 是否跑通，还看候选的结构质量、机制质量与后续可毕业性。"
+    - title: "Information backbone evaluation"
+      text: "观察前段结构化生成、字段供给与 mechanism diversity 是否真正改善搜索质量。"
+    - title: "Benchmark reports / burn-in / canary"
+      text: "用窗口化观察来判断系统是否具备更稳的自治运行能力。"
+    - title: "Evaluation integrity"
+      text: "明确拆分 authoritative execution evidence 与 advisory narrative，防止系统把会讲故事误当成真的有结果。"
+  cards:
+    - title: "Observed Progress"
+      text: "当前已经能看到 generation stability、research process structure、failure diagnosis、memory integrity、continuation design 上的显著进步；后期任务窗口也显示 M2E Row Success Share 与 Research-Active Task Rate 有明显提升。"
+    - title: "Explicit Limitation"
+      warning: true
+      text: "截至目前，系统仍未产出 authoritative、confirmed 的 high-quality alpha；submit-ready pipeline 也不是已被证明的强项。因此它更应该被诚实呈现为一个 strong evaluation / robustness platform，而不是 solved production engine。"
+
+why_it_matters:
+  kicker: "Why It Matters"
+  title: "为什么这个项目不应被误读为只在做量化。"
+  subtitle: "虽然场景来自 WorldQuant-style alpha discovery，但 GrandMaster 最值得关注的并不是具体金融域，而是它把多个更一般的 agent-system 问题放进了一个真实、昂贵、反馈迟缓的环境里。"
+  items:
+    - title: "It is about long-horizon agent design."
+      text: "任务包含 branch creation、validation、simulation、rejection、repair、reroute、graduation checks，天然适合研究 continuation 与 delayed feedback。"
+    - title: "It is about governed autonomy."
+      text: "系统目标是 7x24 autonomy，但 autonomy 必须 bounded、permissioned、measured、restart-safe。"
+    - title: "It is about structured failure learning."
+      text: "失败不应只是 exception 或日志，而应变成 typed events、failure capsules 和 route priors。"
+    - title: "It is about evidence-driven evaluation."
+      text: "系统不仅要运行，还要知道什么是真结果、什么是 advisory narrative、什么是 near miss。"
+
+links:
+  kicker: "Links"
+  title: "可直接访问的入口。"
+  text: "下面保留的是可直接打开的入口，包括主页和 GrandMaster 的在线演示地址。"
+  actions:
+    - label: "Open GrandMaster Demo"
+      url: "http://39.107.250.250/grand_master"
+      type: "primary"
+    - label: "Open Homepage"
+      url: "/"
+  chips:
+    - "long-horizon"
+    - "governance-aware"
+    - "multi-agent"
+    - "evaluation integrity"
+    - "failure learning"

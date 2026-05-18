@@ -1,0 +1,25 @@
+# Main navigation links. Homepage section IDs are rendered from _data/home.yml.
+main:
+  - title: "About"
+    url: "/#about"
+
+  - title: "News"
+    url: "/#news"
+
+  - title: "Experience"
+    url: "/#experience"
+
+  - title: "Learning"
+    url: "/#learning"
+
+  - title: "Projects"
+    url: "/#projects"
+
+  - title: "Preparation"
+    url: "/#preparation"
+
+  - title: "Contact"
+    url: "/#contact"
+
+  - title: "GitHub"
+    url: "https://github.com/UPwith-me"
