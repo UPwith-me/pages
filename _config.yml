@@ -1,17 +1,17 @@
-locale                   : "zh-CN"
+locale                   : "en-US"
 title                    : "He Jipei"
 title_separator          : "-"
 name                     : "He Jipei"
-description              : &description "何基培的个人主页：LLM Agents、Multimodal、Agent Evaluation、AI Research."
+description              : &description "He Jipei — undergraduate researcher interested in LLM reasoning, Transformer architectures, post-training, and multimodal AI safety."
 url                      : "https://upwith-me.github.io"
 baseurl                  : "/pages"
 repository               : "UPwith-me/pages"
 
 author:
   avatar           : "avatar-photo.jpg"
-  name             : "He Jipei / 何基培"
+  name             : "He Jipei"
   pronouns         :
-  bio              : "Undergraduate student interested in LLM Agents, multimodal learning, evaluation, and reliable AI systems."
+  bio              : "Undergraduate researcher interested in LLM reasoning, Transformer architectures, post-training, and multimodal AI safety."
   location         :
   employer         : "Renmin University of China"
   uri              :
