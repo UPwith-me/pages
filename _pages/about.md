@@ -1,69 +1,27 @@
 ---
 permalink: /
 title: ""
-author_profile: false
+author_profile: true
 stylesheets:
   - /assets/css/home.css
 redirect_from:
   - /about/
   - /about.html
 ---
-{% assign home = site.data.home %}
 
-<div class="research-home">
-  <section id="about" class="home-hero">
-    <div class="hero-photo">
-      <img src="{{ '/images/avatar-photo.jpg' | relative_url }}" alt="He Jipei">
-    </div>
+<span class="home-anchor" id="about"></span>
 
-    <div class="hero-main">
-      <p class="hero-eyebrow">{{ home.hero.eyebrow }}</p>
-      <h1>{{ home.hero.name }}</h1>
-      <p class="hero-role">{{ home.hero.role }}</p>
+I am an undergraduate student at [Renmin University of China](https://www.ruc.edu.cn/). My research interests lie in **LLM reasoning, Transformer architecture optimization, post-training, and multimodal AI safety**.
 
-      <div class="hero-copy">
-        {% for paragraph in home.hero.intro %}
-          {{ paragraph | markdownify }}
-        {% endfor %}
-      </div>
+I am particularly interested in understanding how large language models reason, how model architectures and post-training can make reasoning more effective and efficient, and how multimodal systems can remain safe and reliable.
 
-      <div class="hero-links" aria-label="Profile links">
-        {% for link in home.hero.links %}
-          <a href="{{ link.url }}"{% if link.external %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/english/FACULTYn/RuihuaSong/index.htm), Prof. [Wenxuan Wang](https://jarviswang94.github.io/), and Prof. [Suyun Zhao](https://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/ee3b7633ab884b2596fc713137af091d.htm) at Renmin University of China.
 
-  <section id="research" class="home-section">
-    <div class="section-heading">
-      <p class="section-label">Research</p>
-      <h2>Research interests</h2>
-    </div>
+<span class="home-anchor" id="research"></span>
 
-    <div class="research-list">
-      {% for item in home.research %}
-        <article class="research-item">
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.text }}</p>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
+# Research Interests
 
-  <section id="updates" class="home-section updates-section">
-    <div class="section-heading">
-      <p class="section-label">Updates</p>
-      <h2>Recent</h2>
-    </div>
-
-    <div class="updates-list">
-      {% for item in home.updates %}
-        <div class="update-item">
-          <time>{{ item.date }}</time>
-          <p>{{ item.text }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-</div>
+- **LLM Reasoning** — reasoning mechanisms, inference-time computation, and efficient reasoning.
+- **Transformer Architecture Optimization** — architectural design for more efficient and capable models.
+- **Post-Training** — methods that improve reasoning, alignment, and generalization after pretraining.
+- **Multimodal AI Safety** — robustness and safety of models operating across multiple modalities.
