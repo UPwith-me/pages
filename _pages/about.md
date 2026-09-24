@@ -14,7 +14,7 @@ I am an undergraduate student at [Renmin University of China](https://www.ruc.ed
 
 Broadly, I am interested in how foundation models reason and how to make that process more effective and efficient. I also care about the safety and reliability of multimodal systems.
 
-I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/english/FACULTYn/RuihuaSong/index.htm), Prof. [Wenxuan Wang](https://jarviswang94.github.io/), and Prof. [Suyun Zhao](https://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/ee3b7633ab884b2596fc713137af091d.htm) at Renmin University of China.
+I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/GSAI_HOME/FACULTYn/RuihuaSong/698c41551ecb4629a3df64b648881b8d.htm), Prof. [Suyun Zhao](https://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/ee3b7633ab884b2596fc713137af091d.htm), and Prof. [Wenxuan Wang](https://jarviswang94.github.io/) at Renmin University of China.
 
 <span class="home-anchor" id="research"></span>
 
