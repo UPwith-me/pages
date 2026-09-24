@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: ""
 author_profile: true
 stylesheets:
   - /assets/css/home.css
@@ -13,7 +12,7 @@ redirect_from:
 
 I am an undergraduate student at [Renmin University of China](https://www.ruc.edu.cn/). My research interests include **LLM reasoning, Transformer architecture optimization, post-training, and multimodal AI safety**.
 
-Broadly, I am interested in how foundation models can reason more effectively and operate more reliably. I am particularly curious about how model architecture and post-training shape reasoning behavior and efficiency, as well as how safety challenges change in multimodal settings.
+Broadly, I am interested in how foundation models reason and how to make that process more effective and efficient. I also care about the safety and reliability of multimodal systems.
 
 I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/english/FACULTYn/RuihuaSong/index.htm), Prof. [Wenxuan Wang](https://jarviswang94.github.io/), and Prof. [Suyun Zhao](https://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/ee3b7633ab884b2596fc713137af091d.htm) at Renmin University of China.
 
@@ -21,7 +20,7 @@ I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/english/FA
 
 # Research Interests
 
-- **LLM Reasoning** — reasoning mechanisms, inference-time computation, and efficient reasoning.
-- **Transformer Architecture Optimization** — architectural design for more efficient and capable foundation models.
-- **Post-Training** — training methods that improve reasoning, alignment, and generalization after pretraining.
-- **Multimodal AI Safety** — safety and robustness of foundation models across multiple modalities.
+- **LLM Reasoning** — reasoning mechanisms and inference-time computation.
+- **Transformer Architecture Optimization** — efficient architectural design for large language and multimodal models.
+- **Post-Training** — methods for improving reasoning and generalization after pretraining.
+- **Multimodal AI Safety** — safety and robustness across modalities.
