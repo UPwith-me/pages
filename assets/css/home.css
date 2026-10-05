@@ -250,10 +250,11 @@ body {
   text-decoration: none !important;
 }
 
-.paper-card-visual svg {
+.paper-card-visual img {
   display: block;
   width: 100%;
   height: auto;
+  background: #fff;
 }
 
 .paper-badge {
