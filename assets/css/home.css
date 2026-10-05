@@ -1,4 +1,5 @@
 #about,
+#publications,
 #research {
   scroll-margin-top: 88px;
 }
@@ -158,4 +159,72 @@ body {
 .author__urls a {
   display: flex;
   align-items: center;
+}
+
+
+.publication-item {
+  padding: 0.15rem 0 0.25rem;
+}
+
+.publication-title {
+  margin-bottom: 0.4rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.publication-title a {
+  color: #224b8d;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  color: #173767;
+  text-decoration: underline;
+}
+
+.publication-authors {
+  margin-bottom: 0.22rem;
+  color: #454b54;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.publication-meta {
+  margin-bottom: 0.55rem;
+  color: #7b828c;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.page__content .publication-summary {
+  margin: 0 0 0.65rem;
+  color: #5b626c;
+  font-size: 0.94rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.page__content .publication-links a {
+  display: inline-block;
+  padding: 0.18rem 0.58rem;
+  border: 1px solid #cfd5dc;
+  border-radius: 3px;
+  background: #fafbfc;
+  color: #3f4650;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.page__content .publication-links a:hover {
+  border-color: #aeb7c2;
+  background: #f3f5f7;
+  color: #224b8d;
+  text-decoration: none;
 }
