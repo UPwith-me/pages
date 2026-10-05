@@ -16,6 +16,28 @@ Broadly, I am interested in how foundation models reason and how to make that pr
 
 I am fortunate to work with Prof. [Ruihua Song](https://ai.ruc.edu.cn/GSAI_HOME/FACULTYn/RuihuaSong/698c41551ecb4629a3df64b648881b8d.htm), Prof. [Suyun Zhao](https://info.ruc.edu.cn/jsky/szdw/ajxjgcx/jsjkxyjsx1/js2/ee3b7633ab884b2596fc713137af091d.htm), and Prof. [Wenxuan Wang](https://jarviswang94.github.io/) at Renmin University of China.
 
+
+<span class="home-anchor" id="publications"></span>
+
+# Selected Publication
+
+<div class="publication-item">
+  <div class="publication-title">
+    <a href="https://arxiv.org/abs/2609.39394">Can Computation from Earlier Problems Help LLMs Solve New Ones?</a>
+  </div>
+  <div class="publication-authors">
+    <strong>Jipei He</strong>, Wenhui Tan, Xiaoyi Yu, Enver Sangineto, Fiorenzo Parascandolo, Rita Cucchiara, Ruihua Song
+  </div>
+  <div class="publication-meta">arXiv, 2026</div>
+  <p class="publication-summary">
+    We study whether computation retained from earlier problems can help later reasoning, and introduce a lightweight mechanism for reusing prior computation.
+  </p>
+  <div class="publication-links">
+    <a href="https://arxiv.org/abs/2609.39394">arXiv</a>
+    <a href="https://arxiv.org/pdf/2609.39394">PDF</a>
+  </div>
+</div>
+
 <span class="home-anchor" id="research"></span>
 
 # Research Interests
