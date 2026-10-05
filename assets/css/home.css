@@ -162,10 +162,6 @@ body {
 }
 
 
-.publication-item {
-  padding: 0.15rem 0 0.25rem;
-}
-
 .publication-title {
   margin-bottom: 0.4rem;
   font-size: 1.08rem;
@@ -227,4 +223,88 @@ body {
   background: #f3f5f7;
   color: #224b8d;
   text-decoration: none;
+}
+
+
+.paper-card {
+  display: grid;
+  grid-template-columns: minmax(300px, 41%) minmax(0, 1fr);
+  gap: 1.65rem;
+  align-items: center;
+  margin: 0.55rem 0 0.3rem;
+  padding: 1.05rem;
+  border: 1px solid #e0e5eb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(31, 41, 55, 0.07);
+}
+
+.paper-card-visual {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fbfcfe;
+  box-shadow: 0 8px 18px rgba(31, 41, 55, 0.12);
+  line-height: 0;
+  text-decoration: none !important;
+}
+
+.paper-card-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.paper-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0;
+  z-index: 2;
+  padding: 0.35rem 0.72rem;
+  border-radius: 0 4px 4px 0;
+  background: #224b8d;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.paper-card-content {
+  min-width: 0;
+}
+
+.paper-card .publication-title {
+  margin-bottom: 0.52rem;
+  font-size: 1.13rem;
+  line-height: 1.4;
+}
+
+.paper-card .publication-authors {
+  margin-bottom: 0.34rem;
+}
+
+.paper-card .publication-meta {
+  margin-bottom: 0.7rem;
+}
+
+.paper-card .publication-summary {
+  margin-bottom: 0.82rem;
+}
+
+@media (max-width: 760px) {
+  .paper-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.85rem;
+  }
+
+  .paper-card-visual {
+    width: 100%;
+  }
+
+  .paper-card .publication-title {
+    font-size: 1.06rem;
+  }
 }
