@@ -1,15 +1,15 @@
 locale                   : "en-US"
-title                    : "He Jipei"
+title                    : "Jipei He"
 title_separator          : "-"
-name                     : "He Jipei"
-description              : &description "He Jipei — undergraduate researcher interested in LLM reasoning, Transformer architectures, post-training, and multimodal AI safety."
+name                     : "Jipei He"
+description              : &description "Jipei He, undergraduate at Renmin University of China, studying how language models can learn to reuse their internal computation."
 url                      : "https://upwith-me.github.io"
 baseurl                  : "/pages"
 repository               : "UPwith-me/pages"
 
 author:
-  avatar           : "avatar-photo.jpg"
-  name             : "He Jipei"
+  avatar           : "jipei-he-portrait.jpg"
+  name             : "Jipei He"
   pronouns         :
   bio              : "Renmin University of China"
   location         :
@@ -18,7 +18,7 @@ author:
   email            : "hejipei0228@ruc.edu.cn"
 
   arxiv            :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=hTwGIGwAAAAJ&hl=en"
   impactstory      :
   orcid            :
   semantic         :
@@ -93,9 +93,10 @@ facebook:
 og_image                 :
 social:
   type                   : "Person"
-  name                   : "He Jipei"
+  name                   : "Jipei He"
   links:
     - "https://github.com/UPwith-me"
+    - "https://scholar.google.com/citations?user=hTwGIGwAAAAJ&hl=en"
 
 analytics:
   provider               : false

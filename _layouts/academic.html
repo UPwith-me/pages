@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+<!doctype html>
+<html lang="{{ site.locale | replace: '_', '-' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <meta property="og:image" content="{{ site.author.avatar | prepend: '/images/' | absolute_url }}">
+  <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-width header-inner">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          {% for link in site.data.navigation.main %}
+          <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="site-width" id="main" tabindex="-1">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="site-width">
+      {% include footer.html %}
+    </div>
+  </footer>
+</body>
+</html>
